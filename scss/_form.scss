@@ -1,0 +1,69 @@
+// Formulario
+
+#formularioContacto{
+	margin: 20px 25%;
+}
+
+form{
+	div{
+		background-color: $duxLight;
+		display: flex;
+		flex-direction: column;
+		margin: 50px 10px;
+		padding: 20px 10px;
+		label{
+			background-color: $duxLight;
+			border-style: none;
+			padding: 16px 4px;
+			margin: 10px 4px;
+			select, textarea, input{
+				background-color: $duxLight;
+				border-style: solid;
+				border-color: $duxBlue;
+				padding: 12px 4px;
+				margin: 4px 12px 4px 12px;
+				}
+			}
+		ul{
+			li{
+				display: flex;
+				flex-direction: row;
+				input{
+					margin-right: 5px;
+				}
+			}
+		}
+
+
+		div{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+			.button-form{
+					background-color: $duxBlue;
+					border: none;
+					color: $duxLight;
+					font-size: $textH4;
+					font-weight:$textSemi;
+					padding: 12px 0px;
+					border-radius: 20px;
+					width: 40%;
+					text-align: center;
+
+					&:hover{
+						transform: scalex(0.9) scaleY(0.9);
+						cursor: pointer;
+						transition: transform 0.3s;
+					}
+				}
+			}
+		}
+	}
+
+
+	@media only screen and (max-width: 768px){
+	#formularioContacto{
+		margin: 20px 10px;		
+	}
+}

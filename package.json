@@ -1,0 +1,24 @@
+{
+  "name": "duplaux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss  css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcgm82/Desafio-7-SASS-I.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jcgm82/Desafio-7-SASS-I/issues"
+  },
+  "homepage": "https://github.com/jcgm82/Desafio-7-SASS-I#readme",
+  "description": ""
+}

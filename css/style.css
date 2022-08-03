@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,900;1,100;1,400;1,600;1,900&display=swap");
+.bg-colorOwn {
+  background-color: #E4EAEC;
+}
+.bg-colorOwn img {
+  height: 42px;
+}
+.bg-colorOwn img:hover {
+  transform: scalex(0.9) scaleY(0.9);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.bg-colorOwn ul li a {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.bg-colorOwn ul li a:hover {
+  transform: scalex(0.9) scaleY(0.9);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #E4EAEC;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+  color: #E4EAEC;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #242426;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #0d0d0d;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #0d0d0d;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.btnGlobal, .btn404, .btnServicios, .btnBanner {
+  background-color: #0CBABA;
+  color: #E4EAEC;
+  text-decoration: none;
+  padding: 12px 32px 12px 32px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 8px;
+  border-style: none;
+  font-size: 1.1em;
+}
+.btnGlobal:hover, .btn404:hover, .btnServicios:hover, .btnBanner:hover {
+  background-color: #380036;
+  cursor: pointer;
+  transition: 1.5s;
+  color: #E4EAEC;
+  text-decoration: none;
+}
+
+.texto-banner {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(45deg, #380036, #0CBABA);
+  color: #E4EAEC;
+  margin: 0px;
+}
+.texto-banner h3 {
+  padding-top: 300px;
+  color: #E4EAEC;
+}
+.texto-banner h1, .texto-banner h2, .texto-banner h3 {
+  padding-left: 50px;
+}
+
+.btnBanner {
+  float: left;
+  margin-left: 50px;
+}
+.btnBanner:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E4EAEC;
+}
+
+article {
+  margin: 20px 0px;
+  padding: 20px 12px;
+  background-color: #E4EAEC;
+  color: #0d0d0d;
+  border: solid;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 12px;
+  height: auto;
+}
+article:hover {
+  background-color: #E4EAEC;
+  transform: scaleX(0.9) scaleY(0.9);
+  border-style: solid;
+  border-width: 0.3px;
+  border-color: white;
+  transition-duration: 1.1s;
+}
+article h3, article p {
+  box-sizing: border-box;
+  padding: 10px 10px;
+}
+article img {
+  padding: 10px 20px;
+}
+
+.padServicios {
+  padding-bottom: 30px;
+}
+
+.btnServicios {
+  float: right;
+}
+
+#clientes {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px 80px;
+  padding: auto 10px;
+}
+#clientes img:hover {
+  transform: scalex(0.9) scaleY(0.9);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.textPosition {
+  margin: 20% 100px;
+}
+
+.imgBadge {
+  width: 30%;
+  height: auto;
+  margin: 20px 35%;
+}
+
+.varianteColor {
+  color: #0d0d0d;
+}
+
+.varianteSize {
+  padding-top: 140px;
+  font-size: 6em;
+  line-height: auto;
+  overflow-y: hidden;
+}
+
+.divContent {
+  padding: 10px 100px;
+}
+
+.btn404 {
+  float: left;
+}
+
+.flexBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#formularioContacto {
+  margin: 20px 25%;
+}
+
+form div {
+  background-color: #E4EAEC;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 10px;
+  padding: 20px 10px;
+}
+form div label {
+  background-color: #E4EAEC;
+  border-style: none;
+  padding: 16px 4px;
+  margin: 10px 4px;
+}
+form div label select, form div label textarea, form div label input {
+  background-color: #E4EAEC;
+  border-style: solid;
+  border-color: #0CBABA;
+  padding: 12px 4px;
+  margin: 4px 12px 4px 12px;
+}
+form div ul li {
+  display: flex;
+  flex-direction: row;
+}
+form div ul li input {
+  margin-right: 5px;
+}
+form div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+form div div .button-form {
+  background-color: #0CBABA;
+  border: none;
+  color: #E4EAEC;
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 12px 0px;
+  border-radius: 20px;
+  width: 40%;
+  text-align: center;
+}
+form div div .button-form:hover {
+  transform: scalex(0.9) scaleY(0.9);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+  #formularioContacto {
+    margin: 20px 10px;
+  }
+}
+#rrss {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: auto 30px;
+}
+#rrss img {
+  margin: 10px;
+}
+#rrss img:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#logo img {
+  height: 80px;
+  display: block;
+  margin: 20px auto;
+}
+
+footer div {
+  background-color: #E4EAEC;
+}
+footer div ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #0d0d0d;
+}
+
+/*# sourceMappingURL=style.css.map */

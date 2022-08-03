@@ -1,0 +1,38 @@
+Cambios de la versión
+
+Se incluyen 6 páginas (index, servicios/branding, portfolio, nosotros, contacto, Error404)
+
+Se utiliza Bootstrap por CDN
+
+-------------SEO----------------
+
+Se agregan metadescripciones a las páginas principales
+
+Se agregan metatags en páginas principales (excepto 404)
+
+Se optimizan imágenes
+
+Se agregan "alt" en imágenes
+
+Se optimizan gráficos SVG (Logo y 404)
+
+Se optimizan títulos de Banner para hacerlos SEO friendly
+
+------------ SASS ------------------
+
+Se agrega un mixin para definir características de los textos. (_fonts.scss)
+
+Se utiliza este mixin para definir tamaño standart de textos (h1, h2...h4, p) en todo el sitio (_commons.scss)
+
+Se crea un componente botón + hover (.btnGlobal) en _commons.scss
+
+Se crean variantes de este botón + hover por medio de un @extend en _body.scss
+
+-btnServicios
+-btnBanner
+-btn404
+
+Cada uno con características diferenciadas. (todas en _body.scss)
+
+Se enlazan las diferentes secciones del sitio. (En la Nav, así como botones de servicios.)
+

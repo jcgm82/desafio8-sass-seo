@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,900;1,100;1,400;1,600;1,900&display=swap');
+$font-family: 'Montserrat', sans-serif;
+
+$fontMain: 'Montserrat', sans-serif;
+
+$textH1: 2.5em;
+$textH2: 2em;
+$textH3: 1.5em;
+$textH4: 1.3em;
+$textP: 1.1em;
+
+$textBold: 700;
+$textSemi: 600;
+$textRegu: 400;
+$textLight: 300;
+
+@mixin texto ($fontSize, $fontWeight, $color){
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+	color: $color;
+	font-family: $fontMain;
+	box-sizing: border-box;
+}

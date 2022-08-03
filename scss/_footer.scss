@@ -1,0 +1,43 @@
+// Footer
+
+#rrss{
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;	
+	padding: auto 30px;	
+	img{
+		margin: 10px;
+		&:hover{
+				transform: translateY(-4px);
+				cursor: pointer;
+				transition: transform 0.3s;
+			}
+		}
+	}
+
+
+#logo{
+	img{
+		height: 80px;
+		display: block;
+		margin: 20px auto;
+
+	}
+}
+
+footer{
+	div{
+		background-color: $duxLight;
+		ul{
+			li{
+				a{
+					text-decoration: none;
+					list-style: none;
+					color: $duxDark;
+				}
+			}
+		}
+	}
+}
