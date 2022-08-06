@@ -19,6 +19,19 @@
 	}
 }
 
+.texto-banner-nosotros{
+	width: 100%;
+	height: 600px;
+	background-image: linear-gradient(45deg, $duxPurple, $duxBlue);
+	color: $duxLight;
+	margin: 0px;
+	h1{
+		padding-top: 500px;
+		color: $duxLight;
+		padding-left: 50px;		
+	}
+}
+
 .btnBanner{
 	@extend .btnGlobal;
 	float: left;
@@ -100,7 +113,10 @@ article{
 
 
 .textPosition{
-	margin: 20% 100px;
+				@media only screen and (max-width: 768px){
+				margin: 10% 20px;		
+			}
+				margin: 20% 80px;
 }
 
 .imgBadge{
@@ -126,7 +142,10 @@ article{
 }
 
 .divContent{
-	padding: 10px 100px;
+			@media only screen and (max-width: 768px){
+			padding: 10px 20px;		
+			}
+		padding: 10px 100px;
 }
 
 .btn404{
@@ -139,4 +158,18 @@ article{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+}
+
+// pagina portfolio
+
+@media only screen and (min-width: 769px) {
+.tagsDesk {
+	display: block;
+ }
+}
+
+@media only screen and (max-width: 767px) {
+	.tagsDesk {
+		display: none;
+	}
 }

@@ -101,6 +101,19 @@ p {
   padding-left: 50px;
 }
 
+.texto-banner-nosotros {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(45deg, #380036, #0CBABA);
+  color: #E4EAEC;
+  margin: 0px;
+}
+.texto-banner-nosotros h1 {
+  padding-top: 500px;
+  color: #E4EAEC;
+  padding-left: 50px;
+}
+
 .btnBanner {
   float: left;
   margin-left: 50px;
@@ -163,7 +176,12 @@ article img {
 }
 
 .textPosition {
-  margin: 20% 100px;
+  margin: 20% 80px;
+}
+@media only screen and (max-width: 768px) {
+  .textPosition {
+    margin: 10% 20px;
+  }
 }
 
 .imgBadge {
@@ -186,6 +204,11 @@ article img {
 .divContent {
   padding: 10px 100px;
 }
+@media only screen and (max-width: 768px) {
+  .divContent {
+    padding: 10px 20px;
+  }
+}
 
 .btn404 {
   float: left;
@@ -198,6 +221,16 @@ article img {
   justify-content: space-around;
 }
 
+@media only screen and (min-width: 769px) {
+  .tagsDesk {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tagsDesk {
+    display: none;
+  }
+}
 #formularioContacto {
   margin: 20px 25%;
 }
