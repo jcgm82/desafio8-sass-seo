@@ -13,7 +13,7 @@
     <meta name="robots" content="noindex, nofollow">
 
 <!-- Bootstrap CSS -->
-    <!-- <link href="css/bootstrap.css"> -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <!-- css propio -->
@@ -42,7 +42,7 @@
 			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			      <ul class="navbar-nav ms-auto mb-2 mb-lg-2">			        
 			        <li class="nav-item">
-			          <a class="moveUp nav-link" href="#serviciosAncla">Servicios</a>
+			          <a class="moveUp nav-link" href="index.html#serviciosAncla">Servicios</a>
 			        </li>
 			        <li class="nav-item">
 			          <a class="moveUp  nav-link" href="portfolio.html">Portfolio</a>
@@ -60,19 +60,47 @@
 
 <!-- termina nav -->
 
-		<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-		  <div class="carousel-inner">
-		    <div class="carousel-item active">
-		      <img src="media/slider/1.png" class="d-block w-100" alt="Primer slide">
-		    </div>
-		    <div class="carousel-item">
-		      <img src="media/slider/2.png" class="d-block w-100" alt="Segundo slide">
-		    </div>
-		    <div class="carousel-item">
-		      <img src="media/slider/3.png" class="d-block w-100" alt="Tercer slide">
-		    </div>
-		  </div>
-		</div>
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+			   	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  	<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="media/servicios/branding/ideacion.jpg" class="d-block w-100" alt="Imagen de patrones y paletas de colores">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h2 class="text-light">Fase de ideación</h2>
+			        <p class="text-light">Danos tu idea y te ayudaremos a darle forma.</p>
+			      </div>
+			    </div>
+
+			    <div class="carousel-item">
+			      <img src="media/servicios/branding/desarrollo.jpg" class="d-block w-100" alt="Imagen de equipo de diseño">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h2 class="text-light">Fase de desarrollo</h2>
+			        <p class="text-light">Convertiremos esas ideas en grandes ideas con la ayuda de nuestros expertos.</p>
+			      </div>
+			    </div>
+
+			    <div class="carousel-item">
+			      <img src="media/servicios/branding/producto.jpg" class="d-block w-100" alt="Imagen de diseños de papelería">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h2 class="text-light">Producto final</h2>
+			        <p class="text-light">Nuestro equipo creará un producto a la altura de tus necesidades.</p>
+			      </div>
+			    </div>
+			  </div>
+
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Anterior</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Siguiente</span>
+			  </button>
+			</div>
 
 <!-- termina header -->
 
@@ -80,64 +108,54 @@
 
 <section class="row divisorSection">
 	
-<div class="col-sm-12 col-md-6">
+<div>
 	<div class="textPosition">
-		<h3 class="text-center">Branding</h3>
-		<p class="text-sm-start text-md-center">
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quasi, animi itaque esse ut vel nihil a eveniet? Praesentium accusamus fuga illo atque deleniti dolorum, quibusdam voluptatum corrupti, voluptatem impedit esse voluptate, vitae! Vero libero sit ipsam hic, fuga iusto.
-		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem accusamus qui dolorem.
+		<h3 class="text-center mt-3">Branding</h3>
+		<p class="text-justify p-5">
+		El branding es la composición de todas las acciones relacionadas con el posicionamiento, el propósito y los valores. Su objetivo es crear conexiones conscientes e inconscientes entre una marca, sus consumidores y, en última instancia, influir en sus decisiones de compra. En otras palabras, el branding se trata de hacer que una marca sea reconocible y deseada por los consumidores, así como de crear imágenes positivas en sus mentes a través de los productos.
 		</p>
 	</div>
 </div>
-
-<div class="col-sm-12 col-md-6">
-	<div class="cajaTexto">
-		<img src="media/background_servicios.png" alt="foto">
-	</div>
-</div>
-
 
 </section>
 
 <!-- termina descripcion servicio -->
 
-<div id="margenCaja">
+<div>
 
-	<div class="row">
+	<div class="row p-5">
 	
-	
-
-	<article id="bloqueBeneficios" class="card mb-3 col-sm-12 col-md-4 col-lg-4">
-		<div id="badge">
+	<article class="card mb-3 col-sm-12 col-md-4 col-lg-4">
+		<div>
 		  	<img src="media/icons/benefit.png" class="imgBadge" alt="Benefit">
 		  <div class="card-body">
 		    <h4 class="card-title text-center p-3">Beneficios</h4>
-		    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Quae, voluptas quo, illum alias placeat velit nam deserunt perspiciatis, deleniti nisi rem doloremque vero harum.</p>
+		    <p class="card-text">Ayuda a promover tus productos y servicios. Si tu marca tiene un buen branding conseguirás lanzarlo de manera satisfactoria. Las personas verán rápidamente el buen trabajo que hay detrás de tu marca y se interesaran por tus servicios y productos.</p>
 		   
 		  </div>
 		</div>
 
 	</article>
 
-	<article id="bloqueBeneficios" class="card mb-3 col-sm-12 col-md-4 col-lg-4">
+	<article class="card mb-3 col-sm-12 col-md-4 col-lg-4">
 
-		<div id="badge">
+		<div>
 		  	<img src="media/icons/graph.png" class="imgBadge" alt="Crecimiento">
 		  <div class="card-body">
 		    <h4 class="card-title text-center p-3">Crecimiento</h4>
-		    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Quae, voluptas quo, illum alias placeat velit nam deserunt perspiciatis, deleniti nisi rem doloremque vero harum.</p>
+		    <p class="card-text">Queremos que tu marca se posicione en poco tiempo como una de las más importantes en tu rubro. Es por eso que diseñaremos planes basados en tus expectativas acompañados con nuestras sugerencias como expertos en el área.</p>
 		    
 		  </div>
 		</div>
 
 	</article>
 
-	<article id="bloqueBeneficios" class="card mb-3 col-sm-12 col-md-4 col-lg-4">
-		<div id="badge">
+	<article class="card mb-3 col-sm-12 col-md-4 col-lg-4">
+		<div>
 		  	<img src="media/icons/brand.png" class="imgBadge" alt="Marca">
 		  <div class="card-body">
 		    <h4 class="card-title text-center p-3">Reconocimiento</h4>
-		    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Quae, voluptas quo, illum alias placeat velit nam deserunt perspiciatis, deleniti nisi rem doloremque vero harum.</p>
+		    <p class="card-text">Podemos lograr que tu marca sea reconocible fácilmente, y que de esa forma tus usuarios piensen en ti cuando necesiten algún servicio relacionado. Queremos ayudarte a ser una referencia.</p>
 		    
 		  </div>
 		</div>
@@ -169,15 +187,12 @@
 
 <!-- termina main -->
 
-<div id="formularioContacto">
-			<form action="contacto.php" id="contacto">
-		
-		
-		<div>	
-			<h3>Contáctanos</h3>
-			<p class="espacio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia temporibus similique modi voluptas illum, voluptatibus minus. Tempore dolores impedit amet quos, ipsum quas soluta porro iure, non, illo, labore.</p>
+<form action="contacto.php" class="row contactForm">
 
-	
+			<div class="col-sm-12 col-md-6 col-lg-6">
+				<h3>Déjanos tus datos y hagamos algo juntos</h3>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-6">
 				<label for="name">Nombre y apellido</label>
 					<input type="text" id="name" placeholder="Nombre completo">
 
@@ -216,14 +231,13 @@
 						<label for="newsletter">Autorizo que me incluyan en la lista de contacto</label>
 					</li>
 				</ul>
-				<div>
-				<p class="btnServicios">Enviar</p>
+				<div class="botonEnviar scaleDown">
+				<button class="btnForm">Enviar</button>
 				</div>
+			</div>
 
-				
-		</div>
-	</form>
-	</div>
+
+		</form>
 
 <!-- termina contacto -->
 
@@ -271,8 +285,6 @@
 
 <!-- termina footer -->
 
-
-		<!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>

@@ -4,66 +4,53 @@
 	margin: 20px 25%;
 }
 
-form{
+.contactForm{
+	background-color: $duxLight;
+	padding: 20px 20%;
 	div{
-		background-color: $duxLight;
 		display: flex;
 		flex-direction: column;
-		margin: 50px 10px;
-		padding: 20px 10px;
+		margin: 20px 0px;
+		padding: 20px 20px;
+
 		label{
-			background-color: $duxLight;
 			border-style: none;
-			padding: 16px 4px;
-			margin: 10px 4px;
+			padding: 4px 10px;
+
 			select, textarea, input{
 				background-color: $duxLight;
 				border-style: solid;
-				border-color: $duxBlue;
-				padding: 12px 4px;
-				margin: 4px 12px 4px 12px;
+				border-color: none;
+				padding: 12px 10px;
+				margin: 4px 60% 4px 12px;
 				}
 			}
 		ul{
 			li{
 				display: flex;
 				flex-direction: row;
+
 				input{
-					margin-right: 5px;
+					margin-right: 10px;
 				}
 			}
 		}
 
+		.btnForm{
+			@extend .btnGlobal;
+			margin-top: 0px;
 
-		div{
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-
-			.button-form{
-					background-color: $duxBlue;
-					border: none;
-					color: $duxLight;
-					font-size: $textH4;
-					font-weight:$textSemi;
-					padding: 12px 0px;
-					border-radius: 20px;
-					width: 40%;
-					text-align: center;
-
-					&:hover{
-						transform: scalex(0.9) scaleY(0.9);
-						cursor: pointer;
-						transition: transform 0.3s;
-					}
-				}
-			}
 		}
 	}
 
+	
+		}
+	
+
 
 	@media only screen and (max-width: 768px){
-	#formularioContacto{
-		margin: 20px 10px;		
+	.contactForm{
+		background-color: $duxLight;
+		padding: 20px 10px;		
 	}
 }

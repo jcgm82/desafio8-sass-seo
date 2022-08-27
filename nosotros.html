@@ -12,8 +12,8 @@
 
     <meta name="robots" content="noindex, nofollow">
 
-	<!-- Bootstrap CSS -->
-    <!-- <link href="css/bootstrap.css"> -->
+<!-- Bootstrap CSS -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -34,11 +34,11 @@
 		    		<img src="media/logo.svg" class="wow bounceInLeft scaleDown" alt="Logo DuplaUX">
 		    	</a>
 
-		  <!-- boton hamburguesa -->
+<!-- boton hamburguesa -->
 			   	 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			      		<span class="navbar-toggler-icon"></span>
 			    	</button>
-		 	<!-- fin boton hamburguesa -->
+<!-- fin boton hamburguesa -->
 
 			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			      <ul class="wow bounceInRight navbar-nav ms-auto mb-2 mb-lg-2">
@@ -63,99 +63,105 @@
 <!-- termina nav -->
 
 	<header>
-		<div class="texto-banner-nosotros">
+		<div class="textoBannerSm">
 			<h1>Nosotros</h1>
 		</div>
 	</header>
 
-	<!-- ends header -->
+<!-- ends header -->
 
-	<main>
+	<main class="mb-4">
 
-	<section class="divContent row">
-		
-		<div class="card col-sm-12 col-md-6">
-  		<img class="card-img-top" src="media/equipo-de-trabajo.jpg" alt="Imagen de personas trabajando en oficina">
-  		<div class="card-body">
-  		<h2 class="varianteColor">Nuestra historia</h2>	
-    	<p class="card-text">
-    	<strong>DuplaUX es una agencia de asesoría en experiencia de usuario</strong> donde trabajamos con los aspectos más importantes de la experiencia del usuario y el diseño de marcas.
-		Además, ofrecemos otros servicios relacionados con el diseño gráfico y la gestión de contenido.</p>
-  		</div>
-		</div>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 marginCards">
+			  <div class="col">
+			    <div class="card h-100 cardBorder">
+			      <img src="media/historia.jpg" class="card-img-top" alt="historia | imagen de personas dándose la mano">
+			      <div class="card-body">
+			        <h2 class="card-title varianteColor">Nuestra historia</h2>
+					       <p class="card-text"><strong>DuplaUX</strong> es una agencia de asesoría en experiencia de usuario donde trabajamos con los aspectos más importantes de la experiencia del usuario y el diseño de marcas.
+							Además, ofrecemos otros servicios relacionados con el diseño gráfico y la gestión de contenido.
+			      </div>
+			    </div>
+			  </div>
 
-		<div class="card col-sm-12 col-md-6">
-  		<img class="card-img-top" src="media/equipo-de-trabajo.jpg" alt="Imagen de personas trabajando en oficina">
-  		<div class="card-body">
-  		<h2 class="varianteColor">Misión</h2>	
-    	<p class="card-text">
-    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illo ex accusantium consectetur, cum aspernatur suscipit, nisi optio quasi vero numquam. Voluptatem.</p>
-    	<h2 class="varianteColor">Visión</h2>	
-    	<p class="card-text">
-    	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus illo ex accusantium consectetur, cum aspernatur suscipit, nisi optio quasi vero numquam. Voluptatem.</p>
-  		</div>
-		</div>
+			  <div class="col">
+			    <div class="card h-100 cardBorder">
+			      <img src="media/mision.jpg" class="card-img-top" alt="Misión | imagen de equipo de trabajo de pie y sonriendo">
+			      <div class="card-body">
+			        <h2 class="card-title varianteColor">Misión</h2>
+			        <p class="card-text">Crear experiencias digitales de calidad para empresas y particulares mediante un enfoque integral y multidisciplinario.</p>
+			      </div>
+			    </div>
+			  </div>
 
-	</section>
+			  <div class="col">
+			    <div class="card h-100 cardBorder">
+			      <img src="media/vision.jpg" class="card-img-top" alt="Visión | Imagen de equipo de experiencia de usuario trabajando en conjunto">
+			      <div class="card-body">
+			        <h2 class="card-title varianteColor">Visión</h2>
+			        <p class="card-text">Ser un referente a nivel internacional de la excelencia en el mundo de la experiencia de usuario.</p>
+			      </div>
+			    </div>
+			  </div>
+
+			</div>
+
+	
 			
 	</main>
 	<!-- ends main -->
 
-	<div id="formularioContacto">
-			<form action="contacto.php" id="contacto">
-		
-		
-		<div class="wow pulse">	
-			<h3>Contáctanos</h3>
-			<p class="espacio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia temporibus similique modi voluptas illum, voluptatibus minus. Tempore dolores impedit amet quos, ipsum quas soluta porro iure, non, illo, labore.</p>
+			<form action="contacto.php" class="row contactForm">
 
-	
-				<label for="name">Nombre y apellido</label>
-					<input type="text" id="name" placeholder="Nombre completo">
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<h3>Déjanos tus datos y hagamos algo juntos</h3>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<label for="name">Nombre y apellido</label>
+							<input type="text" id="name" placeholder="Nombre completo">
 
-				<label for="mail">Email</label>
-					<input type="text" id="mail" placeholder="email">
+						<label for="mail">Email</label>
+							<input type="text" id="mail" placeholder="email">
 
-				<label for="phone">Número telefónico</label>
-					<input type="text" id="phone" placeholder="Teléfono">
+						<label for="phone">Número telefónico</label>
+							<input type="text" id="phone" placeholder="Teléfono">
 
-				<label for="intake">¿Cómo nos encontraste?</label>
+						<label for="intake">¿Cómo nos encontraste?</label>
 
-				<!-- drop menu | source -->
-				
-				<select name="Source" id="¿Cómo nos encontraste?">
-					<option value="flyer">Flyer</option>
-					<option value="Instagram">Instagram</option>
-					<option value="facebook">Facebook</option>
-					<option value="Linkedin">Linkedin</option>
-					<option value="friend">Amigo</option>
-					<option value="Ya hemos trabajado antes">Ya hemos trabajado antes</option>
-				</select>
+						<!-- drop menu | source -->
+						
+						<select name="Source" id="¿Cómo nos encontraste?">
+							<option value="flyer">Flyer</option>
+							<option value="Instagram">Instagram</option>
+							<option value="facebook">Facebook</option>
+							<option value="Linkedin">Linkedin</option>
+							<option value="friend">Amigo</option>
+							<option value="Ya hemos trabajado antes">Ya hemos trabajado antes</option>
+						</select>
 
-				<!-- ends drop menu | source -->
+						<!-- ends drop menu | source -->
 
-				<label for="details">Escribe tu consulta</label>
+						<label for="details">Escribe tu consulta</label>
 
-				<textarea name="" id="" cols="30" rows="6"></textarea>
+						<textarea name="" id="" cols="30" rows="6"></textarea>
 
-				<ul>
-					<li>
-						<input type="checkbox" id="t_y_c">
-						<label for="TandC" id="tyc">Acepto los  términos y condiciones</label>
-					</li>
-					<li>	
-						<input type="checkbox" id="contact_list">
-						<label for="newsletter">Autorizo que me incluyan en la lista de contacto</label>
-					</li>
-				</ul>
-				<div class="botonEnviar scaleDown">
-				<button class="btnServicios">Enviar</button>
-				</div>
+						<ul>
+							<li>
+								<input type="checkbox" id="t_y_c">
+								<label for="TandC" id="tyc">Acepto los  términos y condiciones</label>
+							</li>
+							<li>	
+								<input type="checkbox" id="contact_list">
+								<label for="newsletter">Autorizo que me incluyan en la lista de contacto</label>
+							</li>
+						</ul>
+						<div class="botonEnviar scaleDown">
+						<button class="btnForm">Enviar</button>
+						</div>
+					</div>
 
-				
-		</div>
-	</form>
-	</div>
+
+				</form>
 
 <!-- termina contacto -->
 

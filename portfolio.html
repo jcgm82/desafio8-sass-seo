@@ -13,7 +13,7 @@
     <meta name="robots" content="noindex, nofollow">
 	
 <!-- Bootstrap CSS -->
-    <!-- <link href="css/bootstrap.css"> -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -34,11 +34,11 @@
 		    		<img src="media/logo.svg" class="wow bounceInLeft scaleDown" alt="Logo DuplaUX">
 		    	</a>
 
-		  <!-- boton hamburguesa -->
+<!-- boton hamburguesa -->
 			   	 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			      		<span class="navbar-toggler-icon"></span>
 			    	</button>
-		 	<!-- fin boton hamburguesa -->
+<!-- fin boton hamburguesa -->
 
 			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			      <ul class="wow bounceInRight navbar-nav ms-auto mb-2 mb-lg-2">
@@ -63,12 +63,11 @@
 <!-- termina nav -->
 
 
-	<!-- ends nav -->
+<!-- ends nav -->
 
-	<header class="portfolio text-center tagsDesk">
+	<header class="portfolio text-center tagsDesk mb-3">
 		
-		<label for="filters">Categorías</label>
-		<button class="btnGlobal">Todas</button>
+		<button class="btnPA">Todas</button>
 		<button class="btnGlobal">Branding</button>
 		<button class="btnGlobal">UX design</button>
 		<button class="btnGlobal">UX writting</button>
@@ -80,44 +79,68 @@
 
 	</header>
 
-	<!-- ends header -->
+<!-- ends header -->
 
 	<main>
 
-		<section class="muestras">
-			<div class="muestra-portfolio">
-				<h2 class="muestra__texto--color espacio">Muestra #1</h2>
+
+<!-- Gallery -->
+
+		<div class="row marginCards">
+  			<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    			<img
+      			src="media/gallery/pattucl.jpg"
+      			class="w-100 shadow-1-strong rounded mb-4"
+     		 	alt="Imagen con muestras de branding Pattu.cl"
+    			/>
+
+			    <img
+			      src="media/gallery/edufuturo.jpg"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Imagen con muestras de branding y laptop con página web de Edufuturo"
+			    />
+  				</div>
+
+			  <div class="col-lg-4 mb-4 mb-lg-0">
+			    <img
+			      src="media/gallery/qb.jpg"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Imagen con muestras de branding y´productos de Quantum Boxes"
+			    />
+
+			    <img
+			      src="media/gallery/mindflics.jpg"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Imagen con muestras de versión web y teléfono movil de la página web de Mindflics"
+			    />
+			  </div>
+
+			  <div class="col-lg-4 mb-4 mb-lg-0">
+			    <img
+			      src="media/gallery/caracas.jpg"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Imagen con muestras de branding de la tienda Caracas Shop"
+			    />
+
+			    <img
+			      src="media/gallery/tv.jpg"
+			      class="w-100 shadow-1-strong rounded mb-4"
+			      alt="Imagen con muestras de branding y laptop con página web de Tennis Visalia, academia de tennis"
+			    />
+			  </div>
 			</div>
 
-			<div class="muestra-portfolio">
-				<h2 class="muestra__texto--color espacio">Muestra #2</h2>
-			</div>
-			<div class="muestra-portfolio">
-				<h2 class="muestra__texto--color espacio">Muestra #3</h2>
-			</div>
+<!-- Gallery -->
 
-			<div class="muestra-portfolio">
-				<h2 class="muestra__texto--color espacio">Muestra #4</h2>
-			</div>
-			<div class="muestra-portfolio">
-				<h2 class="muestra__texto--color espacio">Muestra #5</h2>
-			</div>
 
-			<div class="muestra-portfolio">
-				<h2 class="muestra__texto--color espacio">Muestra #6</h2>
-			</div>
-		</section>
 	</main>
 <!-- starts form -->
-<div id="formularioContacto">
-			<form action="contacto.php" id="contacto">
-		
-		
-		<div class="wow pulse">	
-			<h3>Contáctanos</h3>
-			<p class="espacio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis mollitia temporibus similique modi voluptas illum, voluptatibus minus. Tempore dolores impedit amet quos, ipsum quas soluta porro iure, non, illo, labore.</p>
+<form action="contacto.php" class="row contactForm">
 
-	
+			<div class="col-sm-12 col-md-6 col-lg-6">
+				<h3>Déjanos tus datos y hagamos algo juntos</h3>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-6">
 				<label for="name">Nombre y apellido</label>
 					<input type="text" id="name" placeholder="Nombre completo">
 
@@ -157,13 +180,12 @@
 					</li>
 				</ul>
 				<div class="botonEnviar scaleDown">
-				<button class="btnServicios">Enviar</button>
+				<button class="btnForm">Enviar</button>
 				</div>
+			</div>
 
-				
-		</div>
-	</form>
-	</div>
+
+		</form>
 
 <!-- termina contacto -->
 
@@ -211,8 +233,6 @@
 
 <!-- termina footer -->
 
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="js/wow.min.js"></script>

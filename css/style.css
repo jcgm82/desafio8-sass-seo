@@ -67,7 +67,7 @@ p {
   box-sizing: border-box;
 }
 
-.btnGlobal, .btn404, .btnServicios, .btnBanner {
+.btnGlobal, .contactForm div .btnForm, .btnPA, .btn404, .btnServicios, .btnBanner {
   background-color: #0CBABA;
   color: #E4EAEC;
   text-decoration: none;
@@ -78,7 +78,7 @@ p {
   border-style: none;
   font-size: 1.1em;
 }
-.btnGlobal:hover, .btn404:hover, .btnServicios:hover, .btnBanner:hover {
+.btnGlobal:hover, .contactForm div .btnForm:hover, .btnPA:hover, .btn404:hover, .btnServicios:hover, .btnBanner:hover {
   background-color: #380036;
   cursor: pointer;
   transition: 1.5s;
@@ -97,21 +97,39 @@ p {
   padding-top: 300px;
   color: #E4EAEC;
 }
+@media only screen and (max-width: 768px) {
+  .texto-banner h3 {
+    padding-top: 180px;
+    color: #E4EAEC;
+  }
+}
 .texto-banner h1, .texto-banner h2, .texto-banner h3 {
   padding-left: 50px;
 }
+@media only screen and (max-width: 768px) {
+  .texto-banner h1, .texto-banner h2, .texto-banner h3 {
+    padding-left: 10px;
+  }
+}
 
-.texto-banner-nosotros {
+.textoBannerSm {
   width: 100%;
-  height: 600px;
+  height: 200px;
   background-image: linear-gradient(45deg, #380036, #0CBABA);
   color: #E4EAEC;
   margin: 0px;
 }
-.texto-banner-nosotros h1 {
-  padding-top: 500px;
+.textoBannerSm h1 {
+  padding-top: 120px;
   color: #E4EAEC;
   padding-left: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .textoBannerSm h1 {
+    padding-top: 120px;
+    color: #E4EAEC;
+    padding-left: 10px;
+  }
 }
 
 .btnBanner {
@@ -123,6 +141,18 @@ p {
   border-style: solid;
   border-width: 1px;
   border-color: #E4EAEC;
+}
+@media only screen and (max-width: 768px) {
+  .btnBanner {
+    float: left;
+    margin-left: 10px;
+  }
+  .btnBanner:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E4EAEC;
+  }
 }
 
 article {
@@ -176,11 +206,11 @@ article img {
 }
 
 .textPosition {
-  margin: 20% 80px;
+  margin: 40px 140px;
 }
 @media only screen and (max-width: 768px) {
   .textPosition {
-    margin: 10% 20px;
+    margin: 10% 10px;
   }
 }
 
@@ -190,8 +220,26 @@ article img {
   margin: 20px 35%;
 }
 
+.text-light {
+  background-color: #0CBABA;
+  padding: 20px;
+}
+
 .varianteColor {
   color: #0d0d0d;
+}
+
+.marginCards {
+  margin: 20px 0px;
+}
+@media only screen and (min-width: 768px) {
+  .marginCards {
+    margin: 20px 50px;
+  }
+}
+
+.cardBorder {
+  border-radius: 20px;
 }
 
 .varianteSize {
@@ -231,62 +279,50 @@ article img {
     display: none;
   }
 }
+.btnPA {
+  background-color: #380036;
+}
+
 #formularioContacto {
   margin: 20px 25%;
 }
 
-form div {
+.contactForm {
   background-color: #E4EAEC;
+  padding: 20px 20%;
+}
+.contactForm div {
   display: flex;
   flex-direction: column;
-  margin: 50px 10px;
-  padding: 20px 10px;
+  margin: 20px 0px;
+  padding: 20px 20px;
 }
-form div label {
-  background-color: #E4EAEC;
+.contactForm div label {
   border-style: none;
-  padding: 16px 4px;
-  margin: 10px 4px;
+  padding: 4px 10px;
 }
-form div label select, form div label textarea, form div label input {
+.contactForm div label select, .contactForm div label textarea, .contactForm div label input {
   background-color: #E4EAEC;
   border-style: solid;
-  border-color: #0CBABA;
-  padding: 12px 4px;
-  margin: 4px 12px 4px 12px;
+  border-color: none;
+  padding: 12px 10px;
+  margin: 4px 60% 4px 12px;
 }
-form div ul li {
+.contactForm div ul li {
   display: flex;
   flex-direction: row;
 }
-form div ul li input {
-  margin-right: 5px;
+.contactForm div ul li input {
+  margin-right: 10px;
 }
-form div div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-form div div .button-form {
-  background-color: #0CBABA;
-  border: none;
-  color: #E4EAEC;
-  font-size: 1.3em;
-  font-weight: 600;
-  padding: 12px 0px;
-  border-radius: 20px;
-  width: 40%;
-  text-align: center;
-}
-form div div .button-form:hover {
-  transform: scalex(0.9) scaleY(0.9);
-  cursor: pointer;
-  transition: transform 0.3s;
+.contactForm div .btnForm {
+  margin-top: 0px;
 }
 
 @media only screen and (max-width: 768px) {
-  #formularioContacto {
-    margin: 20px 10px;
+  .contactForm {
+    background-color: #E4EAEC;
+    padding: 20px 10px;
   }
 }
 #rrss {
